@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김태희's 자기소개</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', Arial,
+          sans-serif;
+        background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+        color: #1f2937;
+      }
+
+      .profile-page {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .profile-card {
+        width: 100%;
+        max-width: 950px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 32px;
+        padding: 48px;
+        display: flex;
+        gap: 42px;
+        box-shadow: 0 24px 70px rgba(31, 41, 55, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+
+      .profile-image-box {
+        flex-shrink: 0;
+      }
+
+      .profile-image {
+        width: 180px;
+        height: 180px;
+        border-radius: 36px;
+        object-fit: cover;
+        border: 6px solid #e0e7ff;
+        box-shadow: 0 14px 30px rgba(99, 102, 241, 0.25);
+      }
+
+      .profile-content {
+        flex: 1;
+      }
+
+      .tag {
+        display: inline-block;
+        margin: 0 0 14px;
+        padding: 8px 15px;
+        border-radius: 999px;
+        background-color: #eef2ff;
+        color: #4f46e5;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: 38px;
+        line-height: 1.3;
+        letter-spacing: -1px;
+      }
+
+      .intro {
+        margin: 0 0 30px;
+        color: #4b5563;
+        line-height: 1.8;
+        font-size: 16px;
+      }
+
+      .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        margin-bottom: 34px;
+      }
+
+      .info-item {
+        padding: 18px;
+        border-radius: 20px;
+        background-color: #f9fafb;
+        border: 1px solid #e5e7eb;
+      }
+
+      .info-item span {
+        display: block;
+        margin-bottom: 8px;
+        color: #6b7280;
+        font-size: 14px;
+      }
+
+      .info-item strong {
+        font-size: 16px;
+        color: #111827;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+
+      .section h2 {
+        margin: 0 0 14px;
+        font-size: 22px;
+      }
+
+      .section p {
+        margin: 0;
+        line-height: 1.8;
+        color: #4b5563;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skills span {
+        padding: 10px 14px;
+        border-radius: 14px;
+        background-color: #eef2ff;
+        color: #4338ca;
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .button-group {
+        display: flex;
+        gap: 12px;
+        margin-top: 34px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 13px 20px;
+        border-radius: 16px;
+        background-color: #4f46e5;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        transition: 0.2s;
+      }
+
+      .btn.outline {
+        background-color: white;
+        color: #4f46e5;
+        border: 1px solid #4f46e5;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .profile-page {
+          padding: 28px 16px;
+        }
+
+        .profile-card {
+          flex-direction: column;
+          align-items: center;
+          padding: 32px 24px;
+          gap: 28px;
+        }
+
+        .profile-image {
+          width: 150px;
+          height: 150px;
+          border-radius: 30px;
+        }
+
+        .profile-content {
+          width: 100%;
+        }
+
+        .tag {
+          display: block;
+          width: fit-content;
+          margin: 0 auto 14px;
+        }
+
+        h1 {
+          font-size: 29px;
+          text-align: center;
+        }
+
+        .intro {
+          text-align: center;
+        }
+
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .button-group {
+          flex-direction: column;
+        }
+
+        .btn {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="profile-page">
+      <section class="profile-card">
+        <div class="profile-image-box">
+          <img
+            src="https://via.placeholder.com/180"
+            alt="프로필 이미지"
+            class="profile-image"
+          />
+        </div>
+
+        <div class="profile-content">
+          <p class="tag">Backend Developer</p>
+
+          <h1>안녕하세요, 김태희입니다 👋</h1>
+
+          <p class="intro">
+            사용자에게 보기 쉽고 편리한 화면을 만드는 데 관심이 있습니다. 현재는
+            HTML, CSS, JavaScript를 공부하며 웹 개발 기초를 다지고 있습니다.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <span>이름</span>
+              <strong>김태희</strong>
+            </div>
+
+            <div class="info-item">
+              <span>관심 분야</span>
+              <strong>웹 개발 / 데이터 분석</strong>
+            </div>
+
+            <div class="info-item">
+              <span>목표</span>
+              <strong>성장하는 개발자</strong>
+            </div>
+
+            <div class="info-item">
+              <span>취미</span>
+              <strong>코딩, 산책, 음악 듣기</strong>
+            </div>
+          </div>
+
+          <section class="section">
+            <h2>💻 기술 스택</h2>
+            <div class="skills">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>✨ 나를 소개하는 한 문장</h2>
+            <p>
+              작은 기능도 사용자의 입장에서 고민하며 구현하는 개발자가 되고
+              싶습니다.
+            </p>
+          </section>
+
+          <div class="button-group">
+            <a href="./index.html" class="btn">메인으로 돌아가기</a>
+            <a
+              href="https://github.com/TaeheeKk"
+              class="btn outline"
+              target="_blank"
+            >
+              GitHub 보기
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
